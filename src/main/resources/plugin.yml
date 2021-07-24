@@ -1,0 +1,4 @@
+name: FoxyArtifacts
+version: ${project.version}
+main: me.drigster.foxyartifacts.FoxyArtifacts
+api-version: 1.16
