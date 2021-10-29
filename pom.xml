@@ -39,6 +39,7 @@
                         </goals>
                         <configuration>
                             <createDependencyReducedPom>false</createDependencyReducedPom>
+                            <outputFile>C:\Users\Gabriel\Desktop\server\plugins\FoxyArtifacts.jar</outputFile>
                         </configuration>
                     </execution>
                 </executions>

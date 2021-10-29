@@ -15,7 +15,7 @@ import org.bukkit.scheduler.BukkitScheduler;
 import java.util.ArrayList;
 import java.util.List;
 
-public class foxEvent implements Listener {
+public class foxEvents implements Listener {
 
     FoxyArtifacts plugin = FoxyArtifacts.getInstance();
 
@@ -49,10 +49,10 @@ public class foxEvent implements Listener {
             BukkitScheduler scheduler = plugin.getServer().getScheduler();
             for (foxGod fox : foxes) {
                 scheduler.runTaskLater(plugin, () -> {
-                    killer.playSound(fox.getBukkitEntity().getLocation(), Sound.ENTITY_ILLUSIONER_CAST_SPELL, 2, 1);
-                    killer.spawnParticle(Particle.EXPLOSION_NORMAL, fox.locX(), fox.locY(), fox.locZ(), 60);
+                    location.getWorld().playSound(fox.getBukkitEntity().getLocation(), Sound.ENTITY_ILLUSIONER_CAST_SPELL, 2, 1);
+                    location.getWorld().spawnParticle(Particle.EXPLOSION_NORMAL, fox.locX(), fox.locY(), fox.locZ(), 60);
                     world.removeEntity(fox);
-                }, 20 * 10);
+                }, 20 * 15);
             }
         }
     }

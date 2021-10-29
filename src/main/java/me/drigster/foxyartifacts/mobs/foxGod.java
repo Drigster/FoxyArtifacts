@@ -17,7 +17,7 @@ public class foxGod extends EntityFox {
         this.setInvulnerable(true);
         this.setCanPickupLoot(false);
 
-        this.getAttributeInstance(GenericAttributes.ATTACK_DAMAGE).setValue(10);
+        this.getAttributeInstance(GenericAttributes.ATTACK_DAMAGE).setValue(5);
     }
 
     @Override
